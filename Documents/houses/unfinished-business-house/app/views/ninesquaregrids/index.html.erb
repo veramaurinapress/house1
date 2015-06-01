@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ninesquaregrids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th>Picture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ninesquaregrids.each do |ninesquaregrid| %>
+      <tr>
+        <td><%= ninesquaregrid.text %></td>
+        <td><%= ninesquaregrid.picture %></td>
+        <td><%= link_to 'Show', ninesquaregrid %></td>
+        <td><%= link_to 'Edit', edit_ninesquaregrid_path(ninesquaregrid) %></td>
+        <td><%= link_to 'Destroy', ninesquaregrid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ninesquaregrid', new_ninesquaregrid_path %>

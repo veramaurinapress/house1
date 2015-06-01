@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sixteensquaregrids</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Text</th>
+      <th>Picture</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sixteensquaregrids.each do |sixteensquaregrid| %>
+      <tr>
+        <td><%= sixteensquaregrid.text %></td>
+        <td><%= sixteensquaregrid.picture %></td>
+        <td><%= link_to 'Show', sixteensquaregrid %></td>
+        <td><%= link_to 'Edit', edit_sixteensquaregrid_path(sixteensquaregrid) %></td>
+        <td><%= link_to 'Destroy', sixteensquaregrid, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sixteensquaregrid', new_sixteensquaregrid_path %>
