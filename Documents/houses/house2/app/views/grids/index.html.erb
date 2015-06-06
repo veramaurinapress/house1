@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing ideas</h1>
+
+<% @grids.in_groups_of(3) do |group| %>
+  <div class="row">
+    <% group.compact.each do |grid| %>
+      <div class="col-md-4">
+        <%= image_tag grid.picture_url, width: '100%' if grid.picture.present?%>
+        <h4><%= link_to grid.title, grid %></h4>
+        <%= grid.description %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
