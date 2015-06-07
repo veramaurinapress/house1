@@ -1,0 +1,1515 @@
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSentences (20150606202637)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "sentences" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" text, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150606202637"]]
+  [1m[35m (6.1ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "ARTIST PUBLICITY AGREEMENT desc"], ["description", "replace This Agreement shall be effective as of the date set forth herein"], ["created_at", "2015-06-06 20:27:24.780058"], ["updated_at", "2015-06-06 20:27:24.780058"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "replace This Agreement is ente"], ["description", "red into guided by and governed by the laws of the State of ______ Should any portion of"], ["created_at", "2015-06-06 20:27:24.786889"], ["updated_at", "2015-06-06 20:27:24.786889"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "this Agreement be fou"], ["description", "nd to be invalid or unenforceable it shall not affect the balance of this Agreement"], ["created_at", "2015-06-06 20:27:24.790451"], ["updated_at", "2015-06-06 20:27:24.790451"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "replace The parties to thi"], ["description", "s Agreement shall be: a_________________________________ hereinafter referred to and the Artist and"], ["created_at", "2015-06-06 20:27:24.793778"], ["updated_at", "2015-06-06 20:27:24.793778"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "b _________"], ["description", "___________________________ hereinafter referred to as the Publicist"], ["created_at", "2015-06-06 20:27:24.797671"], ["updated_at", "2015-06-06 20:27:24.797671"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "replace The parties have discu"], ["description", "ssed the matter of how long this Agreement shall be in effect They have discussed the advantages and disadvantages of a shortSentence"], ["created_at", "2015-06-06 20:27:24.801714"], ["updated_at", "2015-06-06 20:27:24.801714"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "term mediumSentenceterm"], ["description", "and/or longSentenceterm Agreement The parties agree that duration of this Agreement shall be THREE YEARS"], ["created_at", "2015-06-06 20:27:24.805769"], ["updated_at", "2015-06-06 20:27:24.805769"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "replace Publicist agrees to"], ["description", "form on behalf of Artist the services customarily rendered on behalf of artistsPublicist agrees to perform the following"], ["created_at", "2015-06-06 20:27:24.810080"], ["updated_at", "2015-06-06 20:27:24.810080"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "services when requested to d"], ["description", "o so by the Artist:a Advise and counsel in any matters pertaining to publicity public relations"], ["created_at", "2015-06-06 20:27:24.815463"], ["updated_at", "2015-06-06 20:27:24.815463"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "and advertising in all fie"], ["description", "lds of entertainmentb Advise and counsel in the selection of literary artistic and musical"], ["created_at", "2015-06-06 20:27:24.819442"], ["updated_at", "2015-06-06 20:27:24.819442"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "material as far as publicity valu"], ["description", "e is concernedc Advise and counsel with relation to the proper format for presentation of"], ["created_at", "2015-06-06 20:27:24.823567"], ["updated_at", "2015-06-06 20:27:24.823567"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Artists artistic talents and in the determination of proper style mood setting business a"], ["description", "nd characterization in keeping with the Artists talents as"], ["created_at", "2015-06-06 20:27:24.827899"], ["updated_at", "2015-06-06 20:27:24.827899"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "far as publicity value is concern"], ["description", "edd Advise and counsel and direct in the selection of the artists talent to"], ["created_at", "2015-06-06 20:27:24.832649"], ["updated_at", "2015-06-06 20:27:24.832649"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "assist accompany or em"], ["description", "bellish Artists artistic presentation as far as publicity value is concerned"], ["created_at", "2015-06-06 20:27:24.836760"], ["updated_at", "2015-06-06 20:27:24.836760"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "e Advise and couns"], ["description", "el with regard to general parties in the entertainment and amusements industries as far as publicity is concerned"], ["created_at", "2015-06-06 20:27:24.841824"], ["updated_at", "2015-06-06 20:27:24.841824"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "f Advise and counsel the sel"], ["description", "ection of publicity programsg Unpaid Television and Radio interviews unless forbidden by AFTRA newspaper"], ["created_at", "2015-06-06 20:27:24.846710"], ["updated_at", "2015-06-06 20:27:24.846710"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "and magazine intervie"], ["description", "ws and pictures shall be soughth Mail publicity releases to the trade press fan magazines newspaper"], ["created_at", "2015-06-06 20:27:24.852326"], ["updated_at", "2015-06-06 20:27:24.852326"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "columnists and radio and televi"], ["description", "sion interview shows etci CoSentenceoperate with public relations personnel if Artist his employers and/or"], ["created_at", "2015-06-06 20:27:24.857073"], ["updated_at", "2015-06-06 20:27:24.857073"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "his management replace a Publicist her"], ["description", "eby informs Artist that stories and items may contain"], ["created_at", "2015-06-06 20:27:24.861469"], ["updated_at", "2015-06-06 20:27:24.861469"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "incorrect information about the Art"], ["description", "ist such information may result from Publicist being misinformed or because the publication in which the story or"], ["created_at", "2015-06-06 20:27:24.866021"], ["updated_at", "2015-06-06 20:27:24.866021"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "item appears made an inte"], ["description", "ntional error and/or omission or for other reasons Publicist hereby informs Artist that Artist may suffer embarrassment and"], ["created_at", "2015-06-06 20:27:24.870571"], ["updated_at", "2015-06-06 20:27:24.870571"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "annoyance because of cor"], ["description", "rect and incorrect publicity Artist declares that he understands that he may suffer mental anguish and monetary loss because of"], ["created_at", "2015-06-06 20:27:24.876020"], ["updated_at", "2015-06-06 20:27:24.876020"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "publicity Artist hereby auth"], ["description", "orizes Publicist to release any and all information about him"], ["created_at", "2015-06-06 20:27:24.881186"], ["updated_at", "2015-06-06 20:27:24.881186"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "i Artist agrees that Pub"], ["description", "licist does not need to clear copy with the Artistii Publicist will keep a copy of all releases and articles the Publicist can"], ["created_at", "2015-06-06 20:27:24.885482"], ["updated_at", "2015-06-06 20:27:24.885482"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "amass in a file at Publ"], ["description", "icists office which the Artist can make use of b Artist promises to supply Publicist with many different pictures and copies"], ["created_at", "2015-06-06 20:27:24.889634"], ["updated_at", "2015-06-06 20:27:24.889634"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "of resumes at Artists cost Pictu"], ["description", "res shall be 8 x replace Publicist hereby notifies Artist that Publicist will be handicapped in his work if he does not"], ["created_at", "2015-06-06 20:27:24.894584"], ["updated_at", "2015-06-06 20:27:24.894584"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "receive pictures and re"], ["description", "sumes in the quantity requestedreplace ARTIST HEREBY AUTHORIZES AND APPOINTS PUBLICIST AS HIS AGENT AND ATTORNEY"], ["created_at", "2015-06-06 20:27:24.899159"], ["updated_at", "2015-06-06 20:27:24.899159"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "INSentenceFACT TO: a Approve and permit all publ"], ["description", "icity public relations endorsements etc"], ["created_at", "2015-06-06 20:27:24.903367"], ["updated_at", "2015-06-06 20:27:24.903367"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "b Approve and permit the use"], ["description", " of Artists name photograph likeness voice sound effects caricatures literary artistic and musical material for the"], ["created_at", "2015-06-06 20:27:24.908522"], ["updated_at", "2015-06-06 20:27:24.908522"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "purposes of advertising and publi"], ["description", "city and in the promotion and advertising of any and all products services etc"], ["created_at", "2015-06-06 20:27:24.913965"], ["updated_at", "2015-06-06 20:27:24.913965"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "replace Artist agrees to at a"], ["description", "ll times to devote himself to his career to do all things necessary and desirable to promote his career and earnings therefrom"], ["created_at", "2015-06-06 20:27:24.919845"], ["updated_at", "2015-06-06 20:27:24.919845"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Artist agrees to a"], ["description", "t all times engage proper theatrical agencies to obtain engagements and employment for him"], ["created_at", "2015-06-06 20:27:24.925233"], ["updated_at", "2015-06-06 20:27:24.925233"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "replace Artist and Publicist agree that Publ"], ["description", "icist is not an employment agent theatrical agent or licensed artists manager or personal manager The"], ["created_at", "2015-06-06 20:27:24.930509"], ["updated_at", "2015-06-06 20:27:24.930509"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "parties agree that Publici"], ["description", "st is not obligated to attempt to secure employment or engagements for Artist The parties agree that Publicist has not promised"], ["created_at", "2015-06-06 20:27:24.935087"], ["updated_at", "2015-06-06 20:27:24.935087"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "to procure employment or enga"], ["description", "gements for Artistreplace This Agreement shall not be construed to create a partnership or joint"], ["created_at", "2015-06-06 20:27:24.940943"], ["updated_at", "2015-06-06 20:27:24.940943"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "venture between Artist and Pub"], ["description", "licist It is an Agreement between independent contractors Artist desires to benefit from that which the Publicist can do"], ["created_at", "2015-06-06 20:27:24.945815"], ["updated_at", "2015-06-06 20:27:24.945815"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Artist desires to comp"], ["description", "ensate Publicist Artist does not desire to obligate himself to pay Publicist large amounts of dollars per hour day week month"], ["created_at", "2015-06-06 20:27:24.951185"], ["updated_at", "2015-06-06 20:27:24.951185"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "year or any other perod Art"], ["description", "ist does desire a relationship to exist between the compensation to Publicist and Artists ability to pay Artist understands"], ["created_at", "2015-06-06 20:27:24.955751"], ["updated_at", "2015-06-06 20:27:24.955751"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "the difficulties in find"], ["description", "ing a 100% accurate manner in measuring the value of Publicists services Occasionally in the business an Artist pays to a person"], ["created_at", "2015-06-06 20:27:24.961231"], ["updated_at", "2015-06-06 20:27:24.961231"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "performing the servi"], ["description", "ces Publicist shall perform on behalf of Artist a percentage of the income of the Artist Both parties understand that Artist"], ["created_at", "2015-06-06 20:27:24.966220"], ["updated_at", "2015-06-06 20:27:24.966220"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "may have the bene"], ["description", "fit of receiving work from Publicist which will far exceed the amount of money that Publicist will receive Both parties understand that"], ["created_at", "2015-06-06 20:27:24.970518"], ["updated_at", "2015-06-06 20:27:24.970518"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "in the event Artists inc"], ["description", "ome shall be in the thousands or tens of thousands or hundreds of thousands of dollars per month year or other time period"], ["created_at", "2015-06-06 20:27:24.976048"], ["updated_at", "2015-06-06 20:27:24.976048"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Publicists income from Arti"], ["description", "st will exceed the amount Artist would have to pay to salaried Contractors if Artist at that time would employ salaried"], ["created_at", "2015-06-06 20:27:24.981281"], ["updated_at", "2015-06-06 20:27:24.981281"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Contractors to perform Publ"], ["description", "icists functions replace The parties understand that Publicists position is that of an independent"], ["created_at", "2015-06-06 20:27:24.986324"], ["updated_at", "2015-06-06 20:27:24.986324"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "contractor Publicist may app"], ["description", "oint or engage other persons firms or corporations to perform any and all services both routine and nonSentenceroutine"], ["created_at", "2015-06-06 20:27:24.991019"], ["updated_at", "2015-06-06 20:27:24.991019"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "that this Agreement states Publ"], ["description", "icist shall perform Publicists services are not exclusive Sentence Publicist is now and shall continue to perform somewhat"], ["created_at", "2015-06-06 20:27:24.995487"], ["updated_at", "2015-06-06 20:27:24.995487"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "similar services for other art"], ["description", "ists also Publicist is now interested in several businesses and Publicist shall continue to devote time to those"], ["created_at", "2015-06-06 20:27:25.000288"], ["updated_at", "2015-06-06 20:27:25.000288"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "businesses and to new bu"], ["description", "sinesses replace The parties understand that there may be times when Artist may be unhappy with Publicist or Publicist may be"], ["created_at", "2015-06-06 20:27:25.005193"], ["updated_at", "2015-06-06 20:27:25.005193"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "unhappy with Artist or bot"], ["description", "h may be unhappy with each other The parties realize that there may be times when Artist will desire that Publicist"], ["created_at", "2015-06-06 20:27:25.010975"], ["updated_at", "2015-06-06 20:27:25.010975"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "perform certain work and that Publi"], ["description", "cist will not perform the desired work or may not even commence to perform the desired work There may be times when"], ["created_at", "2015-06-06 20:27:25.016389"], ["updated_at", "2015-06-06 20:27:25.016389"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Publicist will desire that Arti"], ["description", "st will perform certain work which Artist believes will aid Artists career such as appearing at interviews speaking"], ["created_at", "2015-06-06 20:27:25.021839"], ["updated_at", "2015-06-06 20:27:25.021839"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "engagements photographic se"], ["description", "ssions and the like THEREFORE the parties agree that Publicist shall be required to perform and render reasonable"], ["created_at", "2015-06-06 20:27:25.026806"], ["updated_at", "2015-06-06 20:27:25.026806"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "services as and when reaso"], ["description", "nably requested by Artist It is agreed that Publicist shall not be deemed in default hereunder unless and until Artist"], ["created_at", "2015-06-06 20:27:25.031449"], ["updated_at", "2015-06-06 20:27:25.031449"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "shall first deliver to Publici"], ["description", "st by written notice registered mail describing the exact nature of the service which Artist requires of Publicist"], ["created_at", "2015-06-06 20:27:25.036255"], ["updated_at", "2015-06-06 20:27:25.036255"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "and then only in the eve"], ["description", "nt that Publicist shall therefore fail for a period of fifteen 15 consecutive days to commence the rendition for the particular"], ["created_at", "2015-06-06 20:27:25.040858"], ["updated_at", "2015-06-06 20:27:25.040858"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "service required The parti"], ["description", "es agree that Artist shall not be in default hereunder unless and until Publicist has notified Artist by written"], ["created_at", "2015-06-06 20:27:25.045332"], ["updated_at", "2015-06-06 20:27:25.045332"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "registered mail about the work that Pub"], ["description", "licist considers Artist is dutySentencebound to perform in accordance with the provisions of this Agreement entered into"], ["created_at", "2015-06-06 20:27:25.050773"], ["updated_at", "2015-06-06 20:27:25.050773"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "by Publicist under the author"], ["description", "ity of this Agreementreplace a Publicist shall be reimbursed for expenses if and only if Publicist"], ["created_at", "2015-06-06 20:27:25.055331"], ["updated_at", "2015-06-06 20:27:25.055331"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "gives to Artist receipts fo"], ["description", "r such expenses within two 2 weeks after incurring or paying them whichever is later"], ["created_at", "2015-06-06 20:27:25.060373"], ["updated_at", "2015-06-06 20:27:25.060373"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "b Publicist shall not be requi"], ["description", "red to travel or to meet Artist at any particular place The parties agree that under the terms of this Agreement"], ["created_at", "2015-06-06 20:27:25.065480"], ["updated_at", "2015-06-06 20:27:25.065480"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "they may agree at a futur"], ["description", "e time that Publicist may travel and that arrangements will then be made for costs and expenses of such travel These"], ["created_at", "2015-06-06 20:27:25.069831"], ["updated_at", "2015-06-06 20:27:25.069831"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "arrangements may be to the ef"], ["description", "fect that Artist will pay for any or all of Publicists travel expenses Unless otherwise agreed to in the future Artist"], ["created_at", "2015-06-06 20:27:25.076260"], ["updated_at", "2015-06-06 20:27:25.076260"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "shall pay Publicists travel expen"], ["description", "ses incurred but Publicist will have Artist grant his permission and approval of such expenses in advance of incurring"], ["created_at", "2015-06-06 20:27:25.081799"], ["updated_at", "2015-06-06 20:27:25.081799"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "them replace As a partial fee for Publicists servi"], ["description", "ces Artist agrees to pay Publicist as and when received by Artist and during the term hereof a sum"], ["created_at", "2015-06-06 20:27:25.087882"], ["updated_at", "2015-06-06 20:27:25.087882"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "equal to ____________"], ["description", "__________ per ___week/month_________________replace In the event Publicist has not received payment from Artist for services"], ["created_at", "2015-06-06 20:27:25.093023"], ["updated_at", "2015-06-06 20:27:25.093023"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "rendered he"], ["description", "reunder for two billing periods one month Publicist shall have the option and right to cease and desist from working in the clients behalf"], ["created_at", "2015-06-06 20:27:25.097016"], ["updated_at", "2015-06-06 20:27:25.097016"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "and to take action ag"], ["description", "ainst him for nonpaymentreplace This Agreement constitutes the sole and complete agreement between the"], ["created_at", "2015-06-06 20:27:25.101401"], ["updated_at", "2015-06-06 20:27:25.101401"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Parties hereto supersedin"], ["description", "g and invalidating all previous agreements both written and oral"], ["created_at", "2015-06-06 20:27:25.105929"], ["updated_at", "2015-06-06 20:27:25.105929"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "replace Should any portion "], ["description", "of this Agreement be found to be invalid or unenforceable it shall not affect the validity of the balance of this"], ["created_at", "2015-06-06 20:27:25.111147"], ["updated_at", "2015-06-06 20:27:25.111147"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "Agreement replace Artist a"], ["description", "nd Publicist each warrant to the other that each is able to enter into and abide by the terms of this agreement that there are"], ["created_at", "2015-06-06 20:27:25.115484"], ["updated_at", "2015-06-06 20:27:25.115484"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "no existing agreements wh"], ["description", "ich would interfere with the pursuit of each of the tasks each agrees to perform"], ["created_at", "2015-06-06 20:27:25.121084"], ["updated_at", "2015-06-06 20:27:25.121084"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2015-06-07 03:31:41 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (31.4ms)
+Completed 200 OK in 8654ms (Views: 8637.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 03:31:50 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.9ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 193ms (Views: 191.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-ebdc70a9478e0f84a8f08462169335e881344b1b0535176fccd51b7d285fb664.css?body=1" for ::1 at 2015-06-07 03:31:50 +0700
+
+
+Started GET "/assets/sentences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-07 03:31:50 +0700
+
+
+Started GET "/assets/sentences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-07 03:31:50 +0700
+
+
+Started GET "/" for ::1 at 2015-06-07 03:33:52 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 199ms (Views: 198.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 03:45:42 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 232ms (Views: 229.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:45:49 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (8.9ms)
+  Rendered sentences/new.html.erb within layouts/application (53.5ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@sentences, html: {class: 'form-horizontal'}) do |f| %>
+    2:   <% if @sentences.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@sentences.errors.count, "error") %> prohibited this sentences from being saved:</h2>
+  app/views/sentences/_form.html.erb:1:in `_app_views_sentences__form_html_erb__652993805542363512_70281028584220'
+  app/views/sentences/new.html.erb:3:in `_app_views_sentences_new_html_erb___3221807633041775372_70281024640080'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (97.0ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (207.5ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:45:49 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (3.9ms)
+  Rendered sentences/new.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@sentences, html: {class: 'form-horizontal'}) do |f| %>
+    2:   <% if @sentences.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@sentences.errors.count, "error") %> prohibited this sentences from being saved:</h2>
+  app/views/sentences/_form.html.erb:1:in `_app_views_sentences__form_html_erb__652993805542363512_70281025274060'
+  app/views/sentences/new.html.erb:3:in `_app_views_sentences_new_html_erb___3221807633041775372_70281025244740'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (155.9ms)
+
+
+Started GET "/sentences/66" for ::1 at 2015-06-07 03:46:09 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[35mSentence Load (0.4ms)[0m  SELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1  [["id", 66]]
+  Rendered sentences/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 164ms (Views: 123.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:46:12 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 198ms (Views: 196.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:46:16 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (4.2ms)
+  Rendered sentences/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@sentences, html: {class: 'form-horizontal'}) do |f| %>
+    2:   <% if @sentences.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@sentences.errors.count, "error") %> prohibited this sentences from being saved:</h2>
+  app/views/sentences/_form.html.erb:1:in `_app_views_sentences__form_html_erb__652993805542363512_70281028584220'
+  app/views/sentences/new.html.erb:3:in `_app_views_sentences_new_html_erb___3221807633041775372_70281024640080'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (153.5ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:46:17 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (3.7ms)
+  Rendered sentences/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@sentences, html: {class: 'form-horizontal'}) do |f| %>
+    2:   <% if @sentences.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@sentences.errors.count, "error") %> prohibited this sentences from being saved:</h2>
+  app/views/sentences/_form.html.erb:1:in `_app_views_sentences__form_html_erb__652993805542363512_70281025274060'
+  app/views/sentences/new.html.erb:3:in `_app_views_sentences_new_html_erb___3221807633041775372_70281025244740'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.0ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (150.5ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:46:53 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (83.0ms)
+  Rendered sentences/new.html.erb within layouts/application (84.8ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `notes' for #<Sentence:0x007fd7286ed258>):
+    20:   <div class="field form-group">
+    21:     <%= f.label :notes, class: 'col-sm-2 control-label' %>
+    22:     <div class="col-sm-10">
+    23:       <%= f.text_area :notes, class: 'form-control' %>
+    24:     </div>
+    25:   </div>
+    26:   <div class="actions form-group">
+  app/views/sentences/_form.html.erb:23:in `block in _app_views_sentences__form_html_erb__652993805542363512_70281041549720'
+  app/views/sentences/_form.html.erb:1:in `_app_views_sentences__form_html_erb__652993805542363512_70281041549720'
+  app/views/sentences/new.html.erb:3:in `_app_views_sentences_new_html_erb___3221807633041775372_70281025244740'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (86.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (149.1ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:47:25 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (6.1ms)
+  Rendered sentences/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 171ms (Views: 170.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences/" for ::1 at 2015-06-07 03:49:57 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (27.9ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 181ms (Views: 179.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:49:59 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (3.5ms)
+  Rendered sentences/new.html.erb within layouts/application (6.9ms)
+  Rendered shared/_navigation.html.erb (0.4ms)
+Completed 200 OK in 151ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:08 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (3.4ms)
+  Rendered sentences/new.html.erb within layouts/application (6.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 149ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:10 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (29.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 163ms (Views: 162.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:12 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.8ms)
+  Rendered sentences/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 127.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:14 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.5ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (23.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 189.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:15 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.0ms)
+  Rendered sentences/new.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navigation.html.erb (0.2ms)
+Completed 200 OK in 150ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:33 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.0ms)
+  Rendered sentences/new.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 146ms (Views: 144.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:35 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (1.0ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (29.4ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 169.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:36 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.6ms)
+  Rendered sentences/new.html.erb within layouts/application (5.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:37 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (23.7ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 148ms (Views: 146.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:39 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.8ms)
+  Rendered sentences/new.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 169ms (Views: 168.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:40 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (34.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 178ms (Views: 176.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:43 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.9ms)
+  Rendered sentences/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 144ms (Views: 143.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:51:46 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.5ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (25.8ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 165ms (Views: 163.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:51:49 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.8ms)
+  Rendered sentences/new.html.erb within layouts/application (4.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:52:00 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.9ms)
+  Rendered sentences/new.html.erb within layouts/application (4.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 133.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:52:02 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (24.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 179ms (Views: 177.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 03:52:03 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.4ms)
+  Rendered sentences/new.html.erb within layouts/application (5.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 153ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 03:52:05 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (28.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 171ms (Views: 169.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:11:24 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.7ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (29.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 173ms (Views: 171.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:11:26 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.7ms)
+  Rendered sentences/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 153ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sentences" for ::1 at 2015-06-07 04:11:37 +0700
+Processing by SentencesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PGpKTD33upG6jm0QglOudSVrCOFJIIP5qvbZA6ohzKJLwsD0cVwrhxhMthVS0Nbt1hK41SkZeeiazMyC5hmqYQ==", "sentence"=>{"title"=>"new sen", "description"=>"sent new\r\n"}, "commit"=>"Create Sentence"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "new sen"], ["description", "sent new\r\n"], ["created_at", "2015-06-06 21:11:37.244478"], ["updated_at", "2015-06-06 21:11:37.244478"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/sentences/72
+Completed 302 Found in 21ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/sentences/72" for ::1 at 2015-06-07 04:11:37 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mSentence Load (0.3ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 72]]
+  Rendered sentences/show.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 176ms (Views: 174.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:11:40 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.5ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (24.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 177ms (Views: 175.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:15:55 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (1.0ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (35.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 181ms (Views: 176.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/sentences/72/edit" for ::1 at 2015-06-07 04:16:02 +0700
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"72"}
+  [1m[35mSentence Load (0.2ms)[0m  SELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1  [["id", 72]]
+  Rendered sentences/_form.html.erb (2.7ms)
+  Rendered sentences/edit.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 160ms (Views: 158.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/sentences/72" for ::1 at 2015-06-07 04:16:07 +0700
+Processing by SentencesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yY+mV9nBQ2TORIVyBmMIGxKDS91ErdTcIY9sEoe4osu+JyzvlWrScmyGXnfW4HCD4fr76SSULs0RtXmTy4DECA==", "sentence"=>{"title"=>"new sen", "description"=>"sent new new\r\n"}, "commit"=>"Update Sentence", "id"=>"72"}
+  [1m[36mSentence Load (0.2ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 72]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "sentences" SET "description" = ?, "updated_at" = ? WHERE "sentences"."id" = ?[0m  [["description", "sent new new\r\n"], ["updated_at", "2015-06-06 21:16:07.369785"], ["id", 72]]
+  [1m[35m (2.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/sentences/72
+Completed 302 Found in 21ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/sentences/72" for ::1 at 2015-06-07 04:16:07 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[36mSentence Load (0.2ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 72]]
+  Rendered sentences/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 161ms (Views: 159.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:16:09 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (27.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 169ms (Views: 167.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:16:14 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.1ms)
+  Rendered sentences/new.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sentences" for ::1 at 2015-06-07 04:16:20 +0700
+Processing by SentencesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1isKiw6gGOVZVS++WwfSuZ7feZ4Oy3/CWDf9S6tYAlqhg4AzQguJ8/uX9LuLhKohbabJqm7yhdNoDejK52BkmQ==", "sentence"=>{"title"=>"new test", "description"=>"test\r\n"}, "commit"=>"Create Sentence"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "new test"], ["description", "test\r\n"], ["created_at", "2015-06-06 21:16:20.143091"], ["updated_at", "2015-06-06 21:16:20.143091"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sentences/73
+Completed 302 Found in 8ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/sentences/73" for ::1 at 2015-06-07 04:16:20 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[35mSentence Load (0.3ms)[0m  SELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1  [["id", 73]]
+  Rendered sentences/show.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 172ms (Views: 167.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:16:22 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (28.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 170ms (Views: 168.3ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/sentences/73" for ::1 at 2015-06-07 04:16:30 +0700
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"PhLpUUQghXy17c3+2uYK9IEzoAvOWJq1bysBXYjK/RVJumPpCIsUahcvFvsKZXJsckoQP65hYKRfERTcxPKb1g==", "id"=>"73"}
+  [1m[35mSentence Load (0.3ms)[0m  SELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1  [["id", 73]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  DELETE FROM "sentences" WHERE "sentences"."id" = ?  [["id", 73]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 20ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:16:30 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (34.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 189ms (Views: 187.8ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/sentences/72" for ::1 at 2015-06-07 04:16:38 +0700
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EjKNunEFrMvW71wT6f2UENby+PB9xsS47il+wEY6iDVlmgcCPa493XQthxY5fuyIJYtIxB3/PqneE2tBCgLu9g==", "id"=>"72"}
+  [1m[36mSentence Load (0.1ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 72]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "sentences" WHERE "sentences"."id" = ?[0m  [["id", 72]]
+  [1m[35m (5.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 8ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:16:38 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (2.4ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (38.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 194ms (Views: 190.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:17:29 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (27.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 166ms (Views: 164.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:19:20 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (1.2ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (39.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (undefined local variable or method `todo' for #<#<Class:0x007fd721eb73f0>:0x007fd721eb5668>):
+    19:     <% @sentences.each do |sentence| %>
+    20:       <tr>
+    21:         <td>
+    22:           <span class="has-tooltip" data-toggle="tooltip" title="<%= "Created on #{todo.created_at.strftime("%m/%e/%Y at %w:%M %p")}, Last modified on #{todo.updated_at.strftime("%m/%e/%Y at %w:%M %p")}" %>">
+    23:     <%= sentence.title %>
+    24:   </span>
+    25: </td>
+  app/views/sentences/index.html.erb:22:in `block in _app_views_sentences_index_html_erb__4608085232596365374_70280981869560'
+  app/views/sentences/index.html.erb:19:in `_app_views_sentences_index_html_erb__4608085232596365374_70280981869560'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (152.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:19:45 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (33.5ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined local variable or method `todo' for #<#<Class:0x007fd721eb73f0>:0x007fd729183b90>):
+    19:     <% @sentences.each do |sentence| %>
+    20:       <tr>
+    21:         <td>
+    22:           <span class="has-tooltip" data-toggle="tooltip" title="<%= "Created on #{sentence.created_at.strftime("%m/%e/%Y at %w:%M %p")}, Last modified on #{todo.updated_at.strftime("%m/%e/%Y at %w:%M %p")}" %>">
+    23:     <%= sentence.title %>
+    24:   </span>
+    25: </td>
+  app/views/sentences/index.html.erb:22:in `block in _app_views_sentences_index_html_erb__4608085232596365374_70281042072720'
+  app/views/sentences/index.html.erb:19:in `_app_views_sentences_index_html_erb__4608085232596365374_70281042072720'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (68.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (160.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:20:04 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.7ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (46.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 199ms (Views: 196.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:20:07 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.8ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (40.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 184ms (Views: 182.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:21:14 +0700
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.1) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (71.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (165.9ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:21:23 +0700
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.1) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:21:46 +0700
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.1) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (151.3ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:21:50 +0700
+
+Gem::LoadError (Specified 'sqlite3' for database adapter, but the gem is not loaded. Add `gem 'sqlite3'` to your Gemfile (and ensure its version is at the minimum required by ActiveRecord).):
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:177:in `rescue in spec'
+  activerecord (4.2.1) lib/active_record/connection_adapters/connection_specification.rb:174:in `spec'
+  activerecord (4.2.1) lib/active_record/connection_handling.rb:50:in `establish_connection'
+  activerecord (4.2.1) lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `each'
+  activesupport (4.2.1) lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+  activerecord (4.2.1) lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+  activerecord (4.2.1) lib/active_record/base.rb:26:in `<top (required)>'
+  activerecord (4.2.1) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.1) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/vera/.rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.0ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (149.9ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:22:19 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (45.7ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 531ms (Views: 514.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:22:31 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (1.1ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (65.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 246ms (Views: 243.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:23:21 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (38.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 111.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-f2723062aca09a87cbc1c0a4aea7b24255b98d32ee25de22079603d5f2c8c8cb.js?body=1" for ::1 at 2015-06-07 04:23:21 +0700
+
+
+Started GET "/" for ::1 at 2015-06-07 04:23:29 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.8ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (39.0ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:24:00 +0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (44.6ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 337ms (Views: 319.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:24:03 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.5ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (38.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 87.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:24:16 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (83.1ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 138ms (Views: 136.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sentences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-07 04:24:16 +0700
+
+
+Started GET "/assets/application.self-ebdc70a9478e0f84a8f08462169335e881344b1b0535176fccd51b7d285fb664.css?body=1" for ::1 at 2015-06-07 04:24:16 +0700
+
+
+Started GET "/assets/scaffolds.self-28d4580c2cad0c2eb595d5ce43b78269dc86481aadb8e6d6e304d11fb36ee468.css?body=1" for ::1 at 2015-06-07 04:24:16 +0700
+
+
+Started GET "/assets/application.self-f2723062aca09a87cbc1c0a4aea7b24255b98d32ee25de22079603d5f2c8c8cb.js?body=1" for ::1 at 2015-06-07 04:24:16 +0700
+
+
+Started GET "/" for ::1 at 2015-06-07 04:25:15 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.8ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (64.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 137ms (Views: 135.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:25:26 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (33.4ms)
+  Rendered sentences/new.html.erb within layouts/application (37.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 98ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sentences" for ::1 at 2015-06-07 04:25:30 +0700
+Processing by SentencesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FUmxtUMpn+nKdCyzUjsfhaXWUvVuzCUL3fvxQn/CSFBi4TsND4IO/2i297aCuGcdVq/iwQ713xrtweTDM/oukw==", "sentence"=>{"title"=>"test", "description"=>"test"}, "commit"=>"Create Sentence"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "sentences" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "test"], ["description", "test"], ["created_at", "2015-06-06 21:25:30.855224"], ["updated_at", "2015-06-06 21:25:30.855224"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/sentences/74
+Completed 302 Found in 12ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/sentences/74" for ::1 at 2015-06-07 04:25:30 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[36mSentence Load (0.4ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 74]]
+  Rendered sentences/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 75ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:25:32 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (37.6ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 85.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:29:31 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.5ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined method `descriptions?' for #<Sentence:0x007f98773458e8>):
+    25: </td>
+    26:         <td><%= sentence.description %></td>
+    27:         <td><%= link_to 'Show', sentence, class: 'btn btn-primary btn-xs' %>
+    28:         <% if sentence.descriptions? %>
+    29:           <button type="button" class="btn btn-link has-popover" data-toggle="popover" title="Description" data-content="<%= sentence.descriptions %>">View description (popovers)</button>
+    30: <% end %> 
+    31:   </td>
+  app/views/sentences/index.html.erb:28:in `block in _app_views_sentences_index_html_erb___838717005026122486_70146405980140'
+  app/views/sentences/index.html.erb:19:in `_app_views_sentences_index_html_erb___838717005026122486_70146405980140'
+
+
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.2ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (107.1ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (79.4ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/vera/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (171.8ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:30:45 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (42.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 90ms (Views: 88.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sentences/1" for ::1 at 2015-06-07 04:31:25 +0700
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSentence Load (0.3ms)[0m  [1mSELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered sentences/show.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sentences/1/edit" for ::1 at 2015-06-07 04:31:27 +0700
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSentence Load (0.2ms)[0m  SELECT  "sentences".* FROM "sentences" WHERE "sentences"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered sentences/_form.html.erb (2.6ms)
+  Rendered sentences/edit.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 66ms (Views: 64.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:31:30 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.9ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (42.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 91ms (Views: 89.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:31:57 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (51.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:32:15 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (35.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:32:17 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (33.6ms)
+  Rendered shared/_navigation.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:32:27 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (49.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:33:13 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (52.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 101ms (Views: 99.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:33:53 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.7ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (41.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-99dc9d5bf66e9b752a85a59a9f35fc8bbbefddf1eeab01ae5f43cdc19de18290.js?body=1" for ::1 at 2015-06-07 04:33:53 +0700
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:34:42 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (43.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 349ms (Views: 347.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-8c7c58766aaacc6d3c690e072a029f2403370910fe95e65ff3ab2fc47a4bc7c7.js?body=1" for ::1 at 2015-06-07 04:34:43 +0700
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:37:08 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.8ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (42.4ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 210ms (Views: 207.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:37:14 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (3.5ms)
+  Rendered sentences/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navigation.html.erb (0.5ms)
+Completed 200 OK in 168ms (Views: 167.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:37:16 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (44.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 203ms (Views: 202.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:38:50 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.8ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (41.3ms)
+  Rendered shared/_navigation.html.erb (0.3ms)
+Completed 200 OK in 187ms (Views: 185.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:39:26 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.0ms)
+  Rendered sentences/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 164ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:39:28 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (41.2ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 189ms (Views: 187.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:39:46 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (1.3ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (57.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 202ms (Views: 199.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:42:37 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.1ms)
+  Rendered sentences/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 166ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:42:38 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.6ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (42.3ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 191ms (Views: 189.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:42:41 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.0ms)
+  Rendered sentences/new.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 162ms (Views: 161.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:42:49 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (39.4ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 190ms (Views: 188.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:42:52 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.3ms)
+  Rendered sentences/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 166ms (Views: 165.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:43:25 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.9ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (40.5ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 203ms (Views: 201.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:43:26 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.1ms)
+  Rendered sentences/new.html.erb within layouts/application (6.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 154ms (Views: 153.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:43:30 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.6ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (39.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 201ms (Views: 199.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:43:32 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (1.9ms)
+  Rendered sentences/new.html.erb within layouts/application (4.7ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 149ms (Views: 148.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:43:34 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.9ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (55.1ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 228ms (Views: 226.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/sentences/new" for ::1 at 2015-06-07 04:43:39 +0700
+Processing by SentencesController#new as HTML
+  Rendered sentences/_form.html.erb (2.5ms)
+  Rendered sentences/new.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 173ms (Views: 172.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sentences" for ::1 at 2015-06-07 04:43:42 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.9ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (68.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 233ms (Views: 225.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:43:45 +0700
+Processing by SentencesController#index as HTML
+  [1m[35mSentence Load (0.7ms)[0m  SELECT "sentences".* FROM "sentences"
+  Rendered sentences/index.html.erb within layouts/application (40.9ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 198ms (Views: 196.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-06-07 04:47:02 +0700
+Processing by SentencesController#index as HTML
+  [1m[36mSentence Load (0.9ms)[0m  [1mSELECT "sentences".* FROM "sentences"[0m
+  Rendered sentences/index.html.erb within layouts/application (46.0ms)
+  Rendered shared/_navigation.html.erb (0.1ms)
+Completed 200 OK in 3690ms (Views: 3688.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-81110ca8818b5e8a7b81eff3ad355a1897969c1275128288cf27dfc890b21ee5.css?body=1" for ::1 at 2015-06-07 04:47:06 +0700

@@ -1,9 +1,8 @@
-class CreateGrids < ActiveRecord::Migration
+class CreateSentences < ActiveRecord::Migration
   def change
-    create_table :grids do |t|
+    create_table :sentences do |t|
       t.text :title
       t.text :description
-      t.string :picture
 
       t.timestamps null: false
     end

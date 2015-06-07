@@ -5,8 +5,18 @@
     <%= image_tag(@grid.picture_url, width: '100%') if @grid.picture.present? %>
   </div>
 
-  <h3>Comments</h3>
-    <% @comments.each do |comment| %>
+  <div class="col-md-3">
+    <p><b>Name: </b><%= @grid.title %></p>
+    <p><b>Description: </b><%= @grid.description %></p>
+    <p>
+      <%= link_to 'Edit', edit_grid_path(@grid) %> |
+      <%= link_to 'Destroy', @grid, data: { confirm: 'Are you sure?' }, method: :delete %> |
+      <%= link_to 'Back', grids_path %>
+    </p>
+  </div>
+<div class="container">
+<h3>Comments</h3>
+<% @comments.each do |comment| %>
   <div>
     <strong><%= comment.user_name %></strong>
     <br />
@@ -15,14 +25,5 @@
   </div>
 <% end %>
 <%= render 'comments/form' %>
-
-  <div class="col-md-3">
-    <p><b>Title: </b><%= @grid.title %></p>
-    <p><b>Description: </b><%= @grid.description %></p>
-    <p>
-      <%= link_to 'Edit', edit_grid_path(@grid) %> |
-      <%= link_to 'Destroy', @grid, data: { confirm: 'Are you sure?' }, method: :delete %> |
-      <%= link_to 'Back', grids_path %>
-    </p>
-  </div>
+</div>
 </div>
